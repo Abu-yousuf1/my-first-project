@@ -26,6 +26,7 @@ h1{
 .top-banner{
     background-image:url("image/top-banner.png");
     background-repeat: no-repeat;
+
 }
 section{
    height: 500px;
@@ -70,4 +71,32 @@ section{
         text-align: center;
         font-size: 12;
     }
+.col{
+    width: 40%;
+}
+.col1{
+    width: 100%;
+}
+@media screen and (max-width:768px){
+
+    .col,.col1{
+        width: 100%;
+        padding: 10px;
+        float: left;
+        margin: 20px;
+    }
+    footer{
+        width: 100%;
+        text-position:bottom;
  
+    }
+  
+    
+}
+  
+.top-banner::after{
+    content: '';
+    clear: both;
+    display: table;
+    
+}
